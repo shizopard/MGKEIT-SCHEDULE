@@ -96,8 +96,6 @@ def get_text_messages(message):
         bot.send_message(message.chat.id, f"{message.from_user.username}, ID чата: {message.chat.id}")
         print(f"[{datetime.datetime.now()}] Пользователь {message.from_user.username}[id: {message.from_user.id}] использовал команду /getid")
 
-    elif message.text == "/qbezka":
-        sendNotifi(notificationMessage="🔔 Работа бота в чатах остановлена. Обращайтесь к боту в личку (сюда): t.me/mgkeitIP_bot")
 
     if message.chat.id < 0:
         bot.send_message(message.chat.id, "😢 Бот не работает в группах\nРабота с ботом в личке: @mgkeitIP_bot")
